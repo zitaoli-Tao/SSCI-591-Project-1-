@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Zitao Li</title>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js" defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <nav class="navigation">
+    <a class="signature" href="index.html">Zitao Li</a>
+    <a class="back-link" href="index.html">← Back to home</a>
+  </nav>
+
+  <main>
+    <aside class="profile">
+      <figure>
+        <img class="scene" src="images/ZitaoLi.PNG" alt="Portrait of Zitao Li" width="900" height="1200">
+      </figure>
+      <div class="contact">
+        <p>Los Angeles, CA</p>
+        <a href="mailto:zitaoli@usc.edu">zitaoli@usc.edu</a>
+      </div>
+    </aside>
+
+    <div>
+      <p class="eyebrow">About me</p>
+      <h1>Hello, I'm Zitao.</h1>
+      <p class="degree">Master of Science, Geographic Information Science and Technology</p>
+      <p class="intro">I'm a graduate student in Geographic Information Science and Technology at the University of Southern California, pursuing the Spatial Data Computing Track. I hold a bachelor's degree in Plant Science. My experience includes GIS analysis, GNSS and drone field data collection, and a course project in machine learning.</p>
+
+      <section>
+        <h2>Experience</h2>
+        <article class="entry">
+          <h3>University of Southern California</h3>
+          <p class="meta">Los Angeles, CA · January 2026–Present</p>
+          <p class="role">Graduate Student — GIST Program</p>
+          <ul>
+            <li>Completed coursework and projects focused on spatial data analysis and environmental applications.</li>
+            <li>Developed GIS workflows in ArcGIS Pro to analyze spatial patterns and environmental risk factors.</li>
+            <li>Processed raster and vector datasets using QGIS for spatial modeling and visualization.</li>
+            <li>Applied metadata standards to ensure data accuracy and consistency in geospatial analysis.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Carnegie Mellon University (Course Project)</h3>
+          <p class="meta">Pittsburgh, PA · Summer 2024</p>
+          <p class="role">Research Team Member — Machine Learning and Data Analysis</p>
+          <ul>
+            <li>Conducted research on coreset selection algorithms for fine-grained classification tasks.</li>
+            <li>Applied the SimCore algorithm to optimize training dataset selection and reduce data imbalance.</li>
+            <li>Designed and executed experiments to evaluate classification performance improvements.</li>
+            <li>Collaborated with team members to curate datasets and produce a conference-style research report.</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <article class="entry">
+          <h3>Catalina Island Erosion Risk Assessment</h3>
+          <p class="meta">Catalina Field Excursion · Los Angeles, CA · Spring 2026</p>
+          <ul>
+            <li>Analyzed erosion risks along roads near USC Wrigley Marine Science Center using GIS and drone data.</li>
+            <li>Collected GNSS field data and multispectral drone imagery for 4 high-risk areas.</li>
+            <li>Generated slope, NDVI, and flow accumulation rasters using ArcGIS Pro.</li>
+            <li>Built a weighted overlay model (ERAI) to rank erosion risk levels.</li>
+            <li>Identified alternative routes and proposed mitigation strategies for high-risk zones.</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Skills &amp; qualifications</h2>
+        <dl>
+          <div class="skill"><dt>Applications</dt><dd>ArcGIS Pro, QGIS, Drone2Map</dd></div>
+          <div class="skill"><dt>Hardware</dt><dd>UAV (Drone), GNSS Devices</dd></div>
+          <div class="skill"><dt>License</dt><dd>CAAC Civil UAS Pilot Certificate (VLOS)</dd></div>
+          <div class="skill"><dt>Programming</dt><dd>Python (Basic)</dd></div>
+          <div class="skill"><dt>Languages</dt><dd>Mandarin Chinese (Native), English (Proficient)</dd></div>
+        </dl>
+      </section>
+            <section>
+        <h2>Hobbies</h2>
+
+        <div class="hobby-random">
+          <div class="hobby-stage" id="hobbyStage">
+            <div class="hobby-placeholder" id="hobbyPlaceholder">
+              <span class="shuffle-mark">?</span>
+              <p>One click. One random side of me.</p>
+            </div>
+
+            <img
+              class="hobby-result-image"
+              id="hobbyImage"
+              src=""
+              alt=""
+              aria-hidden="true">
+
+            <div class="hobby-result-copy" aria-live="polite">
+              <p class="hobby-kicker">Random hobby</p>
+              <h3 id="hobbyName"></h3>
+            </div>
+          </div>
+
+          <div class="hobby-controls">
+            <p id="hobbyMessage">The photo stays hidden until you shuffle.</p>
+            <button class="shuffle-button" id="hobbyButton" type="button">
+              Shuffle a hobby
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Zitao Li · Personal website
+    <span class="date-line" id="dateOutput"></span>
+  </footer>
+
+</body>
+</html>
