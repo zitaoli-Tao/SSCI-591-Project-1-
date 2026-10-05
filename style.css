@@ -54,6 +54,14 @@
   margin: 0 0 36px;
 }
 
+.cover-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 100%;
+}
+
 .enter-link {
   display: inline-block;
   text-decoration: none;
