@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore public electric vehicle charging stations in the City of Los Angeles, with charging levels, connector types, and station details.">
+  <title>Plug In LA | Zitao Li</title>
+  <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+  <a class="skip-link" href="#explore">Skip to the map</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Zitao Li <span>/ Web GIS</span></a>
+    <nav aria-label="Main navigation"><a href="about.html">Portfolio</a><a href="#sources">Data &amp; methods</a></nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <p class="eyebrow"><span class="spark" aria-hidden="true">↗</span> SSCI 591 · PROJECT 02</p>
+        <h1 id="title">Plug In <span>LA.</span></h1>
+        <p class="lead">Explore public EV charging stations across the City of Los Angeles.</p>
+        <p class="description">Find stations on the map, compare reported charging levels, and check connector and access information before planning a stop.</p>
+      </div>
+      <div class="stats" aria-label="Dataset summary">
+        <div><strong>2,244</strong><span>station records</span></div>
+        <div><strong>119</strong><span>with DC fast charging reported</span></div>
+        <p>Snapshot downloaded October 4, 2026 · City of Los Angeles</p>
+      </div>
+    </section>
+    <section id="explore" class="explorer" aria-labelledby="map-heading">
+      <div class="map-toolbar"><div><span class="map-dot" aria-hidden="true"></span><h2 id="map-heading">Charging station explorer</h2></div><a href="https://experience.arcgis.com/experience/a23bfcafa3e1441eb066101df07898f5/" target="_blank" rel="noopener">Open full screen ↗</a></div>
+      <iframe src="https://experience.arcgis.com/experience/a23bfcafa3e1441eb066101df07898f5/" title="Plug In LA interactive ArcGIS charging station application" allowfullscreen></iframe>
+      <div class="map-caption"><p><strong>Explore:</strong> zoom into an area and select a station to view its reported details. Open the funnel tool and switch on “DC fast charging reported” to filter the map; switch it off to restore all stations.</p><p>This snapshot does not show live occupancy or guarantee current availability. Check provider information and access restrictions before visiting.</p></div>
+    </section>
+    <section class="details" id="sources" aria-label="About this map">
+      <article><p class="eyebrow">01 / STUDY AREA</p><h2>A city-scale view</h2><p>Stations were selected using the official City of Los Angeles boundary. Nearby independent cities are outside this study area, even when their postal addresses refer to the wider Los Angeles region.</p></article>
+      <article><p class="eyebrow">02 / DATA &amp; METHODS</p><h2>Public, reported stations</h2><p>The source was filtered to electric stations marked public and available, then spatially selected against the city boundary. Reported port counts determine the charging-level categories. Missing counts remain unknown.</p></article>
+      <article><p class="eyebrow">03 / READ THE MAP</p><h2>Stations and ports differ</h2><p>Each point is a station record, which may contain multiple charging ports. Records at the same address are retained. Public stations may have parking charges, limited hours, or customer access conditions.</p></article>
+    </section>
+    <section class="source-note" aria-label="Data sources">
+      <h2>Sources</h2>
+      <p><a href="https://www.arcgis.com/home/item.html?id=9010c04bcdf84c36abb74e98778af579" target="_blank" rel="noopener">USDOT Bureau of Transportation Statistics — Alternative Fueling Stations</a>, drawing on the U.S. Department of Energy's Alternative Fuels Data Center. Source service data updated October 4, 2026; downloaded October 4, 2026 (Pacific).</p>
+      <p>Study boundary: <a href="https://maps.lacity.org/lahub/rest/services/Boundaries/MapServer/7" target="_blank" rel="noopener">City of Los Angeles — City Boundary</a>. <a href="https://afdc.energy.gov/data_download/alt_fuel_stations_format" target="_blank" rel="noopener">Station field definitions ↗</a></p>
+    </section>
+  </main>
+  <footer><span>Zitao Li · University of Southern California</span><span>SSCI 591 · Web GIS Application Development · 2026</span></footer>
+</body>
+</html>
